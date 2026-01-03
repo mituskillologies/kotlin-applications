@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    tools:context="com.example.temperatureconverterapp.ConverterActivity">
+    <!-- Title/Instruction TextView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celsius to Fahrenheit Converter"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:includeFontPadding="false"
+        android:layout_marginTop="60dp"  />
+
+
+    <!-- EditText for Celsius Input (Task Requirement) -->
+    <EditText
+        android:id="@+id/editText_celsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter temperature in Celsius"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:textColorHint="#808080"
+        android:layout_marginBottom="50dp"
+        android:textColor="#000000"
+        />
+
+    <!-- Button to perform the conversion (Task Requirement) -->
+    <Button
+        android:id="@+id/button_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert to Fahrenheit"
+        android:padding="20dp"
+        android:textSize="25sp"
+        android:backgroundTint="#8BC34A"/>
+
+</LinearLayout>
