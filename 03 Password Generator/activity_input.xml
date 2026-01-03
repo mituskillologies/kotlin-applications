@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="33dp"
+    android:background="@color/lightBg"
+    android:gravity="center">
+
+    <!-- Button to toggle between dark and light mode -->
+    <Button
+        android:id="@+id/darkModeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Dark Mode"
+        android:layout_marginTop="33dp"/>
+
+    <!-- App heading text -->
+    <TextView
+        android:id="@+id/appHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password Generator"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:textColor="#647FBC"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- EditText for the user to enter a keyword -->
+    <EditText
+        android:id="@+id/keywordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the keyword..."
+        android:textColor="#647FBC"
+        android:inputType="text"
+        android:padding="33dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <!-- Button to generate the password based on the entered keyword -->
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Password"
+        android:textSize="22dp"
+        />
+</LinearLayout>

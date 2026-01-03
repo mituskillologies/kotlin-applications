@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="33dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Button to toggle between dark and light mode -->
+    <Button
+        android:id="@+id/darkModeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Dark Mode"
+        android:layout_marginTop="24dp"/>
+
+    <!-- App heading text -->
+    <TextView
+        android:id="@+id/appHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password Generator"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:textColor="#647FBC"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- TextView to display the keyword entered by the user -->
+    <TextView
+        android:id="@+id/keywordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="33sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- TextView to display the generated password -->
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Button to generate another password using the same keyword -->
+    <Button
+        android:id="@+id/generateAnotherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Another Password"
+        android:textColor="#0a0a0a"
+        android:textSize="22dp"
+        />
+
+    <!-- Button to go back and generate a password with a new keyword -->
+    <Button
+        android:id="@+id/generateNewKeywordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0a0a0a"
+        android:text="Generate Password with new keyword"
+        android:textSize="22dp"
+        />
+</LinearLayout>
