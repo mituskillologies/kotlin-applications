@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".ColorPickerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Define RGB Color (0-255)"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/edit_text_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"             android:hint="Red (0-255)"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edit_text_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"             android:hint="Green (0-255)"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edit_text_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"             android:hint="Blue (0-255)"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/button_show_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"              android:minHeight="48dp"             android:text="Show Color" />
+
+</LinearLayout>
